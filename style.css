@@ -1,0 +1,214 @@
+/* Paramètres par défaut pour l'ensemble de la page */
+body 
+{	
+	font-family: Ubuntu;
+  }
+
+/* Paramètres pour la barre de navigation */
+nav 
+{
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+}
+
+nav ul 
+{
+	list-style: none;	
+	padding: .2em 2em;
+	float: right;
+}
+
+nav ul li 
+{
+	width: 200px;
+	height: 40px;
+	display: inline-block;
+	padding: .2em .7em;
+	line-height: 40px;
+}
+
+nav a
+{
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	transition: .25s ease-in-out;		
+}
+
+.menu_aPropos
+{
+	font-size: 1.5em;
+}
+nav ul li ul li
+{		
+	display: none;
+}
+
+nav ul li:hover ul li
+{	
+	font-size: .7em;
+	display: block;
+	padding: 0 0 0 5em;
+}
+
+nav a:hover 
+{
+	color: #CD5C5C;
+}
+
+/* Paramètre prise en vigeur lorsque qu'on descend, la barre de navigation devient non transparent ou le redevient */
+
+.nav-bg
+{
+	content: '';
+	position: absolute;
+	display: block;
+	top: -100%;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: rgb(50, 50, 50);
+	transition: .45s ease-in-out;
+}
+
+.ul li:hover ul li
+{
+	font-size: .7em;
+	display: block;
+	padding: 0 0 0 5em;
+	background: rgb(50, 50, 50);
+}
+
+.bg-hidden
+{
+	top: -100%;
+	opacity: 0;
+}
+
+.bg-visible 
+{
+	top: 0;
+	opacity: 1;
+}
+
+
+/* Paramètre pour le titre se trouvant dans le header (los pollos hermanos) */
+.titre_header 
+{
+	position: relative;
+	width: 100%;
+	height: 550px;
+	overflow: hidden;	
+	background: url("images/image1.jpg") no-repeat 50% 50% fixed;
+	background-size: 100%;
+}
+
+.titre_header h1 
+{
+	position: absolute;
+	top: 10%;
+	padding: .3em;
+	font-size: 3em;	
+	color: #CD5C5C;
+}
+
+/* Paramètre pour les row*/
+.row
+{	
+	background-color: #FBD00E;
+	border-top: solid blue;
+	padding: 2em;
+}
+
+.row p
+{	
+	background-color: #FBD00E;
+	border: none;	
+	text-align: left;
+	font-size: 1.5em;
+}
+
+/* Paramètre pour le titre en h1 des row */
+	.row h1 
+	{
+		text-align: center;
+		letter-spacing: 1px;
+		color: #F24711;
+	}
+
+/* Paramètre pour les contenus blancs */
+.row.blanc
+{	
+	background-color: white;
+	padding : 2em;
+}
+
+.row.blanc p
+{
+	background-color: white;
+	text-align: center;
+	margin: 0 auto;	
+	padding: 0 0 50px;
+}
+
+
+/* Paramètre du footer */
+footer
+{
+	border-top: solid blue;
+	width: 100%;
+	background: rgb(50, 50, 50);
+	color: white;
+}
+
+.contenu-footer
+{
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0 0 20px;
+}
+
+.bloc
+{
+	margin: 0 30px;
+}
+
+.footer-contact h3,
+.footer-horaire h3
+{
+	font-size : 30px;
+}
+
+.footer-contact p
+{
+	padding: 5px 0;
+}
+
+.liste-horaires
+{
+	list-style-type: none;
+}
+
+.liste-horaires li
+{
+	padding: 2px 0;
+}
+
+.p_footer
+{
+	text-align: center;
+	align-items: flex-start;
+	margin: 0 auto;		
+	padding: 0 0 20px;
+}
